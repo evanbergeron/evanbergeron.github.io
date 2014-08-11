@@ -6,15 +6,15 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
+title:            Klekticist
+tagline:          A Blog
 url:              http://getpoole.com
 paginate:         1
 baseurl:          /
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Evan Bergeron
+#  url:            https://twitter.com/mdo
+  email:          bergeronej@gmail.com
 
 # Custom vars
 version:          1.0.0
