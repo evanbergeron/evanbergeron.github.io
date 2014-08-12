@@ -9,7 +9,7 @@ Edsger Dijkstra has suggested that the programming language ALGOL 60 was the fir
 
 The distinction is analogous to the difference between the statements "All blondes are dumb" and "What if all blondes were dumb?" It's about the context and usage. The first statement, in the case that it's false, has no real value. But the second statement's merit is not dependent on its truth value: it's useful regardless of whether it's true or false.
 
-It's interesting to think that booleans weren't always first-class citizens. Not only in prorgamming and computer science, but mathematically as well.
+It's interesting to think that booleans weren't always first-class citizens. Not only in programming and computer science, but mathematically as well.
 
 In modern discrete math classes, we are taught about quantified boolean formula statements that hold the value true or false. It's odd that we didn't always view them in that light.
 
