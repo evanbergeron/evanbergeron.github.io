@@ -1,10 +1,11 @@
 ---
-Boolean Expressions and Their Value
+layout: post
+title: Boolean Expressions and Their Value
 ---
 
 Edsger Dijkstra has suggested that the programming language ALGOL 60 was the first programming language to make the distinction that a boolean expression wasn't simply something that was "right" or "wrong," but that it had a value - true or false.
 
-It's interesting to think that booleans weren't always first-class citizens. Not only in prorgamming and computer science, but mathematically as well. 
+It's interesting to think that booleans weren't always first-class citizens. Not only in prorgamming and computer science, but mathematically as well.
 
 > How great that step was I learned from my mother’s reaction. She was a gifted mathematician, but she could not make that step. For her, “three plus five is ten” was not a complicated way of saying “false”; it was just wrong.
 
