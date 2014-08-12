@@ -13,6 +13,6 @@ Similarly, in programming, we may have some proposition and might want to do dif
 
 It's interesting to think that booleans weren't always first-class citizens. Not only in programming and computer science, but mathematically as well.
 
-In modern discrete math classes, we are taught about quantified boolean formula statements that hold the value true or false. It's odd that we didn't always view them in that light.
+In modern discrete math classes, we are taught about quantified boolean formula statements that hold the value true or false. We become accustomed to assigning truth values to these statements. It's odd that we didn't always view them in that light.
 
 In the same interview as the above quote, Dijkstra claims that "computing science started with ALGOL 60." Recently reading about [PSPACE](http://en.wikipedia.org/wiki/PSPACE) and its canonical representative, [TQBF](http://en.wikipedia.org/wiki/Quantified_Boolean_formula_problem), I'm inclined to agree.
