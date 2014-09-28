@@ -6,7 +6,7 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            4
+title:            evanBergeron
 tagline:          The Standard IEEE-vetted random number.
 url:              http://getpoole.com
 paginate:         1
@@ -17,7 +17,7 @@ author:
   email:          bergeronej@gmail.com
 
 # Custom vars
-version:          1.0.0
+version:          1.0.2
 github:
   repo:           https://github.com/poole/poole
 pages_list:
