@@ -11,11 +11,11 @@ But then I switched to linux and was unable to find similar instructions for lin
 
 Enter [xcape](https://github.com/alols/xcape). I cloned from github and entered
 
-```./xcape -e 'Shift_L=Shift_L|parenleft'
-
+```
+./xcape -e 'Shift_L=Shift_L|parenleft'
 ./xcape -e 'Shift_R=Shift_R|parenright'
-
-./xcape -e 'Caps_Lock=Escape'```
+./xcape -e 'Caps_Lock=Escape'
+```
 
 And viola. My main complaint about switching to linux was rectified. Hopefully this helps someone else out there as well :).
 
