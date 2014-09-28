@@ -6,9 +6,9 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            evanBergeron
-tagline:          The Standard IEEE-vetted random number.
-url:              http://getpoole.com
+title:            evan bergeron
+tagline:          nerd
+url:              http://evanbergeron.github.io
 paginate:         1
 baseurl:          /
 author:
