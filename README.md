@@ -1,3 +1,3 @@
-# evanBergeron.com
+# evanbergeron.com
 
-Personal website. Primarily intended as a personal professional hub.
+A small homepage for me.

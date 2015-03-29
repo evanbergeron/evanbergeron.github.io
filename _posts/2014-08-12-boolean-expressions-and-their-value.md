@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Boolean Expressions and Their Value
 ---
 

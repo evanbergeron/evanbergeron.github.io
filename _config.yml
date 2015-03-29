@@ -1,26 +1,9 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
+# Site settings
+title: Evan Bergeron
+tag_text: Hi, I'm Evan
+description: A Math / CS student at CMU
 
-# Permalinks
-permalink:        pretty
+# Build settings
+markdown: kramdown
 
-# Setup
-title:            evan bergeron
-tagline:          nerd
-url:              http://evanbergeron.github.io
-paginate:         1
-baseurl:          /
-author:
-  name:           Evan Bergeron
-#  url:            https://twitter.com/mdo
-  email:          bergeronej@gmail.com
-
-# Custom vars
-version:          1.0.2
-github:
-  repo:           https://github.com/poole/poole
-pages_list:
-  About: '/about'
-  Archive: '/archive'
-  Feed: '/atom.xml'
+exclude: ["README.md"]
