@@ -1,9 +1,0 @@
-# Site settings
-title: Evan Bergeron
-tag_text: Hi, I'm Evan
-description: A Math / CS student at CMU
-
-# Build settings
-markdown: kramdown
-
-exclude: ["README.md"]
