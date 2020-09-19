@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>index</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>_ <em> | | | | | |</em>| |__ ___ _ <strong> | </strong>| ‘_  / _ |’_<br />
+| |<em>| | | | (</em>) | | | | _<em>|</em>| |_|___/|<em>| |</em>|</p>
+<p>thon is a small programming language. Here’s an example program that verifies the empty list is empty.</p>
+<pre><code>let isempty : (u. (unit |  (nat * 0))) -&gt; nat =
+    \ natlist : (u. (unit |  (nat * 0))) -&gt;
+        (case (unfold natlist) of
+        empty -&gt; S Z
+        | hdAndTl -&gt; Z)
+in let nil : (u. (unit |  (nat * 0))) =
+    fold u . (unit | (nat * 0))
+    with left unit : (unit |  (nat * (u . (unit | (nat * 0)))))
+in
+(isempty nil)</code></pre>
+<hr />
+<p>(<em>)</em> _ <strong>| |_ </strong> <em>| | | | | ’ (</em>-&lt; <em>/ </em>` | | | |<em>|</em>||_/__/_<em>_</em>,<em>|</em>|_|</p>
+<p>This works for me on Ubuntu 20:</p>
+<pre><code>$ sudo apt install smlnj ml-yaxx ml-lex ml-lpt
+$ sml
+- CM.make &quot;path/to/your/git/clone/thon.cm&quot;;
+- Thon.run &quot;some thon program here&quot;;</code></pre>
+<hr />
+<p>/ <em>|</em>__ __ <em>| |</em> _ _ _ _ ___ __<em> | </em>/ -<em>) </em>` | <em>| || | ’</em>/ -<em>|</em>-&lt; |_| ____<em>,</em>|_<em>|_,</em>|_| _<strong>/</strong>/</p>
+<p>thon has natural numbers, functions, bounded recursion, binary product and sum types, parametric polymorphism, existential packages (a formalization of interfaces), and recursive types.</p>
+<p>All that stuff is sanity tested and seems to work. The parser is not done yet.</p>
+<p>| | <em>.</em>|_ ._<em>.| | | .</em> _ |_ _ ._<em> | |(</em>| |<em>|</em>||(<em>|| | ||</em>|| | ||<em>)(/</em>|_&gt;</p>
+<ul>
+<li><p>Z is the natural number 0.</p></li>
+<li><p>S Z is 1.</p></li>
+</ul>
+<p><em> |</em> ._ __|<em>. </em> ._ <em> ||</em>|| |(_ |<em>|(</em>)| |_&gt;</p>
+<ul>
+<li><p> x : nat -&gt; x is the identity function on natural numbers.</p>
+<p>We could also have  x : nat -&gt; ( y : nat -&gt; y). This function returns a function that returns whatever was fed to the top-level function.</p></li>
+<li><p>(( x : nat -&gt; x) Z) applies the identity function to the natural number Zero.</p></li>
+</ul>
+<p>_ <em> |</em>) _ ._ <em>| </em> <em>| |</em>) _ _ ._<em>. </em> ._ |<em>)(</em>)|<em>|| |(</em>|(/<em>(</em>| | (/<em>(</em>|<em>||</em>&gt;|(_)| |</p>
+<ul>
+<li><p> nat -&gt; rec 0 ( Z -&gt; Z | S -&gt; S S 0 ) is a function that multiplies its input by 2. Let’s break it down:</p>
+<p>rec i ( Z -&gt; b | S -&gt; r) evaluates to b if i is Zero. This is the base case.</p>
+<p>The recursive case (r) binds a new variable that represents the value of the previous recursion.</p>
+<p>rec (S i) ( Z -&gt; b | S -&gt; r ) plugs its previous recusive value rec i ( Z -&gt; b’ -&gt; S - &gt; r’) in for this “previous recursion” variable in the recursive case r.</p>
+<p>e.g.</p>
+<p>rec (S Z) (Z -&gt; Z | S -&gt; S S 0) steps to S S (rec (Z) (Z -&gt; Z | S -&gt; S S 0)) steps to S S (Z).</p></li>
+</ul>
+<p>_ <em> |</em>)<em>..<strong>.._ _ </strong>|</em>._. _ |<em>)</em> | ._ _ _ ._._ |_ . <em>.</em> <em> | (</em>||(<em>|| | |(/</em>|<em>| |(</em> | (<em>)|/| | |(</em>)| |<em>)| ||</em>&gt;| | | / |</p>
+<ul>
+<li>poly  0 -&gt; 0 is the polymorphic identity function.</li>
+</ul>
+<p>_ <em> |</em> . <strong>|_ _ .</strong>|<em>. </em>.| |<em>)</em>. <em>| </em>. _ _ <em> |</em>&gt;&lt;|<em>&gt; |</em>(/<em>| ||</em>|(<em>|| | (</em>|(<em>|&lt;(</em>|(_|(/__&gt; _|</p>
+<ul>
+<li><p>Pack makes a type private to an implementation. Here’s a simple example:</p>
+<pre><code>((*set*) \ x : nat -&gt; (x, Z),
+(*get*) \ tup : (nat * nat) -&gt; fst tup)
+
+
+((*set*) \ x : nat -&gt; x,
+ (*get*) \ x : nat -&gt; x)</code></pre>
+<p>These tuples are two different implementations of a (set, get) interface.</p>
+<p>The left function in each takes in a natural number and converts it to something. The right function of each retrieves that natural number.</p>
+<p>The first implementation stores its arg in the tuple (arg, 0). The second stores arg by itself. Of course, these implementations have different types.</p>
+<p>These internal storage types are implementation details; let’s pack them away.</p>
+<pre><code>impl (nat -&gt; 0, 0 -&gt; nat) with nat as
+(
+    ((*set*) \ x : nat -&gt; x,
+    (*get*) \ x : nat -&gt; x)
+)
+
+impl (nat -&gt; 0, 0 -&gt; nat) with (nat * nat) as
+(
+    ((*set*) \ x : nat -&gt; (x, Z),
+    (*get*) \ tup : (nat * nat) -&gt; fst tup)
+)</code></pre>
+<p>Both of these expression have type ((nat -&gt; T) * (T -&gt; nat)) for some type T. They’ve abstracted away their implementation type into an abstract type variable.</p>
+<p>Now we can use these two implementations interchangably. I’ll write up an example of how to do this later.</p></li>
+</ul>
+<hr />
+<p>|<em>) </em> _ ._<em>. </em> | ._ _ <em> | (/</em>(<em>|</em>||<em>&gt;|/(/</em> |/|_)(/__&gt; / |</p>
+<ul>
+<li><p>u.(unit | (nat * 0)) is the type of lists natural numbers.</p></li>
+<li><p>fold u . (unit | (nat * 0)) with left unit : (unit | (nat * (u . (unit | (nat * 0)))))</p>
+<p>is the empty list of natural numbers. Haha I will add more sugar over time for this…</p></li>
+<li><p> (nat * (u. (unit | (nat * 0)))) -&gt; fold u.(unit | (nat * 0)) with right 0 : (unit | (nat * (u. (unit | (nat * 0)))))</p>
+<p>is a function that takes a pair (nat, natlist) and prepends nat to natlist.</p></li>
+</ul>
+<p>I’ve mostly been working out of Bob Harper’s “Practical Foundations for Programming Languages,” though Pierce’s “Types and Programming Languages” has been a useful source of examples and exposition as well. I am also grateful to Rob Simmons and every other contributor to the SML starter code for CMU’s Fall 2016 compilers course.</p>
+</body>
+</html>
