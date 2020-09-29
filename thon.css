@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
+body {
+    font: 14px/1.5 Inconsolata, monospace;
+    max-width:35rem;
+}
+html {
+    background: #fdf6e3;
+    color: #657b83;
+    padding: 2rem;
+}
+h2 {
+    padding-left: 7em;
+    text-indent: -7em;
+}
+.banner {
+    background-color: rgb(209, 212, 235);
+    color: white;
+    padding: 1rem;
+    display: inline-block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+h1 {
+  font: 48px VT323;
+  color: #859900
+}
+h2 {
+  font: 24px VT323;
+  color: #268bd2
+}
+h3 {
+  font: 18px VT323;
+  /* color: #cb4b16 */
+}
+pre, code {
+  font: 14px/1.5 VT323;
+}
